@@ -171,6 +171,17 @@ code, .mono {
   padding: 0.08em 0.35em;
 }
 
+/* work-in-progress banner (projects page) */
+.banner {
+  background: #fef7e0;
+  border: 1px solid #b06000;
+  border-radius: 8px;
+  padding: 0.8rem 1.1rem;
+  margin: 1rem 0 0.2rem;
+  font-size: 0.98rem;
+}
+.banner strong { color: #b06000; }
+
 .callout {
   background: var(--accent-bg);
   border-radius: 8px;
