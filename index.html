@@ -61,10 +61,6 @@ systems for core distributed services.</em></p>
       isolated, low-dependency operational plane hosting minimal counterparts of core
       components required to execute system recovery when the primary infrastructure
       experiences catastrophic failure.</li>
-  <li><strong>Tiered Recovery Architecture:</strong> Developed and maintain decoupled
-      infrastructure solutions tailored explicitly to multi-level disaster tiers,
-      establishing clear execution paths from localized service emergencies to complete
-      data center outages.</li>
   <li><strong>System Validation &amp; Risk Assessment:</strong> Execute structured failure
       analysis and verification procedures across isolated data centers to ensure recovery
       systems remain viable and decoupled under severe stress conditions.</li>
@@ -83,8 +79,7 @@ systems for core distributed services.</em></p>
 <p><em>Developed software in Go to manage the security and reliability of Google&rsquo;s global enterprise network devices.</em></p>
 <ul>
   <li><strong>Security &amp; Device Management:</strong> Built and maintained software systems responsible for cryptographic key management across global network components.</li>
-  <li><strong>Concurrency &amp; Hardware Integration:</strong> Handled multi-threaded, concurrent access layers to hardware interfaces safely.</li>
-  <li><strong>Topology Risk Monitoring:</strong> Maintained an active monitoring and alerting system designed to detect single points of failure (SPOF) within the network topology.</li>
+  <li><strong>SPOF Detection &amp; Access Locking:</strong> Maintained an active monitoring and alerting system that detects single points of failure (SPOF) within the network topology and safely locks multi-threaded, concurrent access to the underlying hardware interfaces.</li>
   <li><strong>Technical Ownership &amp; Automation:</strong> Served as the primary technical owner for critical services, overseeing their long-term system health and automating manual security processes to maintain consistent network state safety.</li>
   <li><strong>Operational Tooling:</strong> Built and maintained multi-threaded,
       peer-reviewed Go command-line utilities (CLIs) to securely manage and verify global
