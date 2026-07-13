@@ -1,0 +1,9 @@
+# the plaintext projects page never gets committed — only the encrypted projects.html
+projects_src.html
+enc/
+node_modules/
+.staticrypt.json
+.password.local.txt
+
+resume-singapore.html
+*.pdf
