@@ -314,8 +314,8 @@ label.staticrypt-remember {
   overflow-x: auto; padding: 2px 0 4px;
 }
 .bv-step {
-  flex: 1 1 0; min-width: 58px; background: none; border: 0; cursor: pointer;
-  font: inherit; padding: 0 3px; color: var(--muted); text-align: center;
+  flex: 1 1 0; min-width: 50px; background: none; border: 0; cursor: pointer;
+  font: inherit; padding: 0 2px; color: var(--muted); text-align: center;
   position: relative;
   display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
 }
@@ -355,7 +355,7 @@ label.staticrypt-remember {
 .bv-lane > .bv-box { flex: 1 1 0; min-width: 0; }
 .bv-laneA > .ext { flex: 0 0 152px; }
 .bv-laneA > .venue { flex: 0 0 132px; }
-.bv-laneB > [data-node="storage"], .bv-laneC > [data-node="sim"] { flex: 1.4 1 0; }
+.bv-laneC > [data-node="sim"] { flex: 1.4 1 0; }
 .bv-lane::before {
   content: attr(data-lane); position: absolute; top: -28px; left: 0;
   font-size: 0.6rem; letter-spacing: 0.09em; text-transform: uppercase;
@@ -526,6 +526,7 @@ main .issue-list li {
   .bv-wires { display: none; }
   .bv-cols { grid-template-columns: 1fr; }
   .bv-step .t { display: none; }
+  .bv-step { min-width: 34px; }
 }
 @media print {
   .bv-steps, .bv-legend, .bv-lb { display: none; }
@@ -534,7 +535,7 @@ main .issue-list li {
 
 /* stepper chevrons */
 .bv-arrow {
-  flex: none; width: 28px; height: 28px; margin: 2px 2px 0; align-self: flex-start;
+  flex: none; width: 28px; height: 28px; margin: 2px 0 0; align-self: flex-start;
   border: 1px solid #e3e5e8; border-radius: 50%; background: #fff;
   color: var(--muted); font: inherit; font-size: 1rem; line-height: 1;
   cursor: pointer; padding: 0;
